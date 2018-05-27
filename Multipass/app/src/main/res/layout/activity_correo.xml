@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/fab_margin"
+    android:paddingRight="@dimen/fab_margin"
+    tools:context=".Activities.Activities.correo">
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="154dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ingresa correo:"
+        android:maxLength="50"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="293dp"
+        android:text="Envíar al correo"
+        android:textColor="@color/colorWhite"
+        android:background="@android:color/holo_blue_light"/>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context="com.example.stardust.multipass.Activities.Activities.MainActivity">
+
+
+    <EditText
+        android:id="@+id/txtusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:ems="10"
+        android:hint="Usuario:"
+        android:inputType="textPersonName"
+        android:text=""
+        android:maxLength="8"
+        android:textColor="@color/colorPrimary"
+        android:theme="@style/AppTheme" />
+
+
+    <EditText
+        android:id="@+id/txtpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtusuario"
+        android:layout_below="@+id/txtusuario"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Contraseña:"
+        android:inputType="textPassword"
+        android:text=""
+        android:maxLength="6"
+        android:textColor="@color/colorPrimary"
+        android:theme="@style/AppTheme" />
+
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_marginBottom="46dp"
+        android:layout_marginStart="34dp"
+        android:layout_toEndOf="@+id/registro"
+        android:text="Recordar usuario"
+        android:theme="@style/CampoTextoPurpura" />
+
+    <TextView
+        android:id="@+id/registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/switch1"
+        android:layout_alignBottom="@+id/switch1"
+        android:layout_alignStart="@+id/txtpwd"
+        android:text="Registrarse"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="¿Olvidaste contraseña o usuario?"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_blue_light"
+            android:text="Iniciar sesion"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+</RelativeLayout>
